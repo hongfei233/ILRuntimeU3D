@@ -80,6 +80,11 @@ public class HelloWorld : MonoBehaviour
         //HelloWorld，第一次方法调用
         appdomain.Invoke("HotFix_Project.InstanceClass", "StaticFunTest", null, null);
 
+        appdomain.Invoke("HotFix.HelloWorld", "TestStatic", null, null);
+
+        object obj = appdomain.Instantiate("HotFix.HelloWorld");
+        appdomain.Invoke("HotFix.HelloWorld", "TestInstance", obj, null);
+
     }
 
     private void OnDestroy()

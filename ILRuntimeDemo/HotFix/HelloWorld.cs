@@ -3,9 +3,13 @@ namespace HotFix
 {
     public class HelloWorld
     {
-        public void Test()
+        public static void TestStatic()
         {
-            UnityEngine.Debug.Log("Test.ZHF");
+            UnityEngine.Debug.Log("TestStatic.ZHF");
+        }
+        public void TestInstance()
+        {
+            UnityEngine.Debug.Log("TestInstance.ZHF");
         }
     }
 }
